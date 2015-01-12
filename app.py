@@ -8,9 +8,8 @@ ENV = Environment(loader=FileSystemLoader('templates'))
 
 
 def get_params():
-    params = {'key': os.environ.get('key', ''),
-              'user': os.environ.get('user', ''),
-              'password': os.environ.get('password', '')}
+    params = {'message': os.environ.get('message', ''),
+              'user': os.environ.get('user', '')}
     return params
 
 
